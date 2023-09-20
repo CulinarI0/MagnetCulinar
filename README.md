@@ -7,4 +7,4 @@ It must associate two **Gastronomic Details** through the tags
 For a while it works as an organizer of **Gastronomy Details**
 
 ## Glossary
-Gastronomic details: You can **Gastronomic details** as any info.
+Gastronomic details: You can understand **Gastronomic details** as any info.

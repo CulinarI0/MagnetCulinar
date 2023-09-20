@@ -15,8 +15,8 @@ impl ScoringStrategy for DefaultScoringStrategy {
             // TODO remove these constants to things coming from a database
             match tag.name.as_str() {
                 "dry" => score += 1.0,
-                "fatty" => score += 0.5,
-                "lamb" => score += 0.5,
+                "fatty" => score += 1.0,
+                "lamb" => score += 1.0,
                 _ => {} 
             }
         }

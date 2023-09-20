@@ -21,7 +21,19 @@ fn main() {
     println!("---");
     info2.display();
     let strategy = DefaultScoringStrategy;
+    
+    let info1_score = strategy.calculate_score(&info1.tags);
+    let info2_score = strategy.calculate_score(&info2.tags);
+    println!("Info cow meat Score: {}", info1_score );
+    println!("Info fish meat Score: {}", info2_score);
 
-    println!("Info cow meat Score: {}", strategy.calculate_score(&info1.tags));
-    println!("Info fish meat Score: {}", strategy.calculate_score(&info2.tags));
+    //  weird way to match, just for tests
+    match info2_score >= info1_score {
+        true => {
+            println!("");    
+        }
+        false => {
+            println!("");
+        },
+    }
 }
